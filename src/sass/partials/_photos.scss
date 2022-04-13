@@ -1,0 +1,60 @@
+.photo-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.searchForm{
+  height: 50px;
+  border-radius: 15px;
+  color: white;
+  border: 3px solid rgb(36, 110, 194);
+  margin-bottom: 30px;
+}
+
+.submitBtn{
+  height: 100%;
+  padding: 5px;
+  background: rgb(217, 235, 255);
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+  
+  &:enabled:hover {
+    background: rgb(182, 216, 255);
+  }
+
+  &:disabled {
+    background: rgb(235, 235, 235);;
+  }
+}
+
+.searchFormInput{
+  height: 100%;
+  padding: 5px;
+  padding-left: 15px;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  &:focus-visible{
+    outline: none;
+  }
+}
+
+.imageList {
+  display: grid;
+  max-width: calc(100vw - 48px);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imageItem:hover{
+      transform: scale(1.02);
+}

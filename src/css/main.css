@@ -1,0 +1,231 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: var(--additionalFont);
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  padding: 20px 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.todo-container {
+  background: #292121;
+  max-width: 500px;
+  min-width: 320px;
+  margin: 50px auto;
+  border-radius: 15px;
+  padding: 20px 10px;
+  color: white;
+  border: 3px solid #246ec2;
+}
+
+.task {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.task button {
+  background: #0c7cfb;
+  border-radius: 5px;
+  margin: 0px 5px;
+  padding: 4px 8px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  float: right;
+}
+
+.header {
+  margin: 0.5em;
+  font-size: 2em;
+  text-align: center;
+}
+
+.createTaskForm {
+  text-align: center;
+}
+
+.create-task .input[type=text] {
+  margin: 30px 20px;
+  width: 80%;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+.editTaskForm {
+  text-align: center;
+  margin-bottom: 40px;
+  height: 50px;
+  border-radius: 15px;
+  color: white;
+  border: 3px solid #246ec2;
+}
+
+.submitEditing {
+  height: 100%;
+  padding: 5px;
+  width: 20%;
+  background: #a5ff9e;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.submitEditing:enabled:hover {
+  background: #90ff88;
+}
+
+.editingFormInput {
+  height: 100%;
+  width: 80%;
+  padding: 5px 15px;
+  border: none;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.editingFormInput:focus-visible {
+  outline: none;
+}
+
+.todo-goback {
+  text-align: center;
+  color: white;
+}
+
+.goback-link {
+  color: white;
+}
+
+.photo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+.searchForm {
+  height: 50px;
+  border-radius: 15px;
+  color: white;
+  border: 3px solid #246ec2;
+  margin-bottom: 30px;
+}
+
+.submitBtn {
+  height: 100%;
+  padding: 5px;
+  background: #d9ebff;
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+}
+
+.submitBtn:enabled:hover {
+  background: #b6d8ff;
+}
+
+.submitBtn:disabled {
+  background: #ebebeb;
+}
+
+.searchFormInput {
+  height: 100%;
+  padding: 5px;
+  padding-left: 15px;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.searchFormInput:focus-visible {
+  outline: none;
+}
+
+.imageList {
+  display: -ms-grid;
+  display: grid;
+  max-width: calc(100vw - 48px);
+  -ms-grid-columns: (minmax(150px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imageItem:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+.labelContainer {
+  margin: 0px 10px;
+  width: 80px;
+}
+
+.inputLabel {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+  color: black;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #0c7cfb;
+  color: #fff;
+}
+/*# sourceMappingURL=main.css.map */

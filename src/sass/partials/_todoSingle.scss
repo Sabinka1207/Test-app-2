@@ -1,0 +1,43 @@
+.editTaskForm{
+  text-align: center;
+  margin-bottom: 40px;
+  height: 50px;
+  border-radius: 15px;
+  color: white;
+  border: 3px solid rgb(36, 110, 194);
+}
+
+.submitEditing {
+  height: 100%;
+  padding: 5px;
+  width: 20%;
+  background: rgb(165, 255, 158);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+
+  &:enabled:hover {
+    background: rgb(144, 255, 136);
+  }
+}
+
+.editingFormInput {
+  height: 100%;
+  width: 80%;
+  padding: 5px 15px;
+  border: none;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.todo-goback {
+  text-align: center;
+  color: white;
+}
+
+.goback-link {
+  color: white;
+}
